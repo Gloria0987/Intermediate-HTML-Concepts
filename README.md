@@ -20,4 +20,7 @@ If you were to open up a JPEG in a text editor, it would just look like gobbledy
 2. *Interoperability* with HTML
 This means one can put the above code directly in an HTML file, without any changes, and it should display the image. And because these can become elements in the DOM just like HTML elements, you can target them with CSS and create them using the [Element WebAPI](https://developer.mozilla.org/en-US/docs/Web/API/Element)
  you’ve already been using!
-
+ 
+# Drawbacks of SVG
+1.Extremely inefficient at storing complex image
+If your image is supposed to be photo-realistic, or it has fine detail or texture (“[grunge textures](https://unsplash.com/s/photos/grunge-texture)” are a great example), then SVGs are the wrong tool for the job.
