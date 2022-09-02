@@ -22,5 +22,6 @@ This means one can put the above code directly in an HTML file, without any chan
  you’ve already been using!
  
 # Drawbacks of SVG
-1.Extremely inefficient at storing complex image
+1.Extremely inefficient at storing complex image.
+
 If your image is supposed to be photo-realistic, or it has fine detail or texture (“[grunge textures](https://unsplash.com/s/photos/grunge-texture)” are a great example), then SVGs are the wrong tool for the job.
