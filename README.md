@@ -12,3 +12,5 @@ SVGs have another interesting aspect to them: they’re defined using XML. XML (
 
 # Benefits of SVG
 1. First, it means that it is *human-readable*.
+
+If you were to open up a JPEG in a text editor, it would just look like gobbledygook. If you were to open up an SVG, however, it would look something like this:
