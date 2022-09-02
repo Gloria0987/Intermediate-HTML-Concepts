@@ -25,3 +25,13 @@ This means one can put the above code directly in an HTML file, without any chan
 1.Extremely inefficient at storing complex image.
 
 If your image is supposed to be photo-realistic, or it has fine detail or texture (“[grunge textures](https://unsplash.com/s/photos/grunge-texture)” are a great example), then SVGs are the wrong tool for the job.
+
+Typically, you will not want to create SVGs from scratch in your code. Most often, you will download the file or copy the code either from a website or from an image editor that can create them (Adobe Illustrator and Figma are two popular apps that can create SVGs). However, it’s pretty common to download an SVG and want to tweak or adjust it just a little bit, so knowing what all the bits and pieces are, and how they work is very useful.
+
+1.**xmlns** - stands for “XML NameSpace”. This specifies what dialect of XML you’re using–in our case, that dialect is the SVG language spec. Without it, some browsers will not render your image or will render it incorrectly.
+
+2.**viewBox** - defines the bounds of your SVG. When you have to define the positions of different points of the elements in your SVG, this is what that’s referencing. It also defines the aspect ratio and the origin of your SVG. So it’s doing quite a lot! Be sure to play around with different values in the example above to get a feel for how it affects the shapes.
+
+3.**class**, **id** - these attributes function just like they do in HTML. Using these in SVGs allows you to easily target an element via CSS or JavaScript, or to reuse an element via the use element.
+
+4.Elements such as**ircle,rect,path and text** defined by the SVG namespace. These are our basic building-blocks. Although you can make extremely complex images with SVG, they are mostly created with just a dozen or so of these basic elements.
